@@ -1,10 +1,11 @@
 /*
  * Y-Clean — Pricing Section
- * Design: Clean table with pricing tiers, matching original site
+ * Design: Clean table with pricing tiers
  */
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check } from "lucide-react";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const pricingData = [
   { hours: "3H", kitchen: true, bedroom: "–", bathrooms: "1", price: "CHF 138" },
@@ -14,6 +15,8 @@ const pricingData = [
 ];
 
 export default function PricingSection() {
+  const { t } = useLanguage();
+
   return (
     <section id="pricing" className="py-16 md:py-24 bg-white">
       <div className="container">
@@ -24,10 +27,10 @@ export default function PricingSection() {
           transition={{ duration: 0.5 }}
           className="text-center mb-10"
         >
-          <h2 className="font-serif text-3xl md:text-4xl mb-4">Our Cleaning Rates</h2>
+          <h2 className="font-serif text-3xl md:text-4xl mb-4">{t("pricing.title")}</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Make your home shine with Y-Clean. Book and pay online and receive an{" "}
-            <strong>immediate confirmation</strong>!
+            {t("pricing.desc")}{" "}
+            <strong>{t("pricing.desc_bold")}</strong>!
           </p>
         </motion.div>
 
@@ -39,10 +42,8 @@ export default function PricingSection() {
           className="max-w-3xl mx-auto"
         >
           <div className="bg-teal-50/60 rounded-2xl p-6 md:p-8 border border-teal-100">
-            <h3 className="font-semibold text-lg text-center mb-2">How many hours should I book?</h3>
-            <p className="text-sm text-muted-foreground text-center mb-6">
-              Use the table below to estimate the duration of the household according to the surface area.
-            </p>
+            <h3 className="font-semibold text-lg text-center mb-2">{t("pricing.how_many")}</h3>
+            <p className="text-sm text-muted-foreground text-center mb-6">{t("pricing.estimate")}</p>
 
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
@@ -58,7 +59,7 @@ export default function PricingSection() {
                 </thead>
                 <tbody>
                   <tr className="border-b border-teal-100/60">
-                    <td className="py-3 px-4 font-medium">Kitchen</td>
+                    <td className="py-3 px-4 font-medium">{t("pricing.kitchen")}</td>
                     {pricingData.map((col) => (
                       <td key={col.hours} className="py-3 px-4 text-center">
                         {col.kitchen && <Check size={18} className="text-primary mx-auto" />}
@@ -66,7 +67,7 @@ export default function PricingSection() {
                     ))}
                   </tr>
                   <tr className="border-b border-teal-100/60">
-                    <td className="py-3 px-4 font-medium">Bedroom</td>
+                    <td className="py-3 px-4 font-medium">{t("pricing.bedroom")}</td>
                     {pricingData.map((col) => (
                       <td key={col.hours} className="py-3 px-4 text-center text-muted-foreground">
                         {col.bedroom}
@@ -74,7 +75,7 @@ export default function PricingSection() {
                     ))}
                   </tr>
                   <tr className="border-b border-teal-100/60">
-                    <td className="py-3 px-4 font-medium">Bathrooms</td>
+                    <td className="py-3 px-4 font-medium">{t("pricing.bathrooms")}</td>
                     {pricingData.map((col) => (
                       <td key={col.hours} className="py-3 px-4 text-center text-muted-foreground">
                         {col.bathrooms}
@@ -82,7 +83,7 @@ export default function PricingSection() {
                     ))}
                   </tr>
                   <tr className="bg-teal-100/40">
-                    <td className="py-3 px-4 font-semibold text-xs uppercase tracking-wider">Rate (per week)</td>
+                    <td className="py-3 px-4 font-semibold text-xs uppercase tracking-wider">{t("pricing.rate")}</td>
                     {pricingData.map((col) => (
                       <td key={col.hours} className="py-3 px-4 text-center font-bold text-primary">
                         {col.price}
@@ -96,7 +97,7 @@ export default function PricingSection() {
 
           <div className="text-center mt-8">
             <Button asChild className="bg-primary hover:bg-teal-700 text-white rounded-full px-8 py-3 gap-2">
-              <a href="#booking">Book online <ArrowRight size={16} /></a>
+              <a href="#booking">{t("nav.book")} <ArrowRight size={16} /></a>
             </Button>
           </div>
         </motion.div>

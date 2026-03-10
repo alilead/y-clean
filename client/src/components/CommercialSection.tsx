@@ -2,24 +2,17 @@
  * Y-Clean — Commercial Cleaning Services Section
  * Design: Text with checklist of services
  */
-import { Check } from "lucide-react";
+import { Check, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-
-const servicesLeft = [
-  "Deep cleaning of houses and apartments",
-  "Home cleaning and ironing",
-  "Office cleaning and clearance",
-];
-
-const servicesRight = [
-  "Sofa cleaning",
-  "Mattress cleaning",
-  "Carpet cleaning",
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function CommercialSection() {
+  const { t } = useLanguage();
+
+  const servicesLeft = [t("commercial.s1"), t("commercial.s2"), t("commercial.s3")];
+  const servicesRight = [t("commercial.s4"), t("commercial.s5"), t("commercial.s6")];
+
   return (
     <section id="commercial" className="py-16 md:py-24 bg-white">
       <div className="container">
@@ -30,14 +23,9 @@ export default function CommercialSection() {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="font-serif text-3xl md:text-4xl mb-6">Commercial cleaning services</h2>
-            <p className="text-muted-foreground mb-4 leading-relaxed">
-              Y-Clean is a cleaning company offering professional cleaning and building maintenance services
-              throughout the canton of Geneva, Switzerland. Because our expertise goes beyond cleaning techniques,
-              quality and satisfaction are essential to us. In this field, we provide a wide range of cleaning
-              services from professional to professional.
-            </p>
-            <p className="text-muted-foreground mb-8">Thus, we offer services including:</p>
+            <h2 className="font-serif text-3xl md:text-4xl mb-6">{t("commercial.title")}</h2>
+            <p className="text-muted-foreground mb-4 leading-relaxed">{t("commercial.p1")}</p>
+            <p className="text-muted-foreground mb-8">{t("commercial.p2")}</p>
           </motion.div>
 
           <motion.div
@@ -66,7 +54,7 @@ export default function CommercialSection() {
           </motion.div>
 
           <Button asChild className="bg-primary hover:bg-teal-700 text-white rounded-full px-8 gap-2">
-            <a href="#booking">Online quote for office cleaning <ArrowRight size={16} /></a>
+            <a href="#booking">{t("commercial.cta")} <ArrowRight size={16} /></a>
           </Button>
         </div>
       </div>

@@ -5,6 +5,7 @@
 import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const communes = [
   "Aire-la-Ville", "Anières", "Avully", "Avusy", "Bardonnex", "Bellevue",
@@ -18,8 +19,10 @@ const communes = [
 ];
 
 export default function AreasSection() {
+  const { t } = useLanguage();
+
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section id="contact" className="py-16 md:py-24 bg-white border-t border-border/30">
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <motion.div
@@ -28,29 +31,27 @@ export default function AreasSection() {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="font-serif text-3xl md:text-4xl mb-6">Areas we Serve</h2>
+            <h2 className="font-serif text-3xl md:text-4xl mb-6">{t("areas.title")}</h2>
 
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center">
                 <MapPin size={20} className="text-primary" />
               </div>
-              <span className="font-semibold">Canton of Geneva</span>
+              <span className="font-semibold">{t("areas.canton")}</span>
             </div>
 
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Our <strong>cleaning service in Geneva</strong> serves the whole canton, including the communes of
-              Lancy, Plan-les-Ouates, Carouge, Cologny, Collonge-Bellerive, Champel, Bernex, Troinex,
-              Vandoeuvres, etc.
+              {t("areas.desc")}
             </p>
 
             <Button asChild className="bg-primary hover:bg-teal-700 text-white rounded-full px-8 gap-2 mb-8">
-              <a href="#contact">Contact us</a>
+              <a href="#booking">{t("areas.contact")}</a>
             </Button>
 
             {/* Commune Tags */}
             <div className="bg-muted/50 rounded-xl p-6 border border-border/40">
               <h4 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">
-                Available in: Geneva and surroundings
+                {t("areas.available")}
               </h4>
               <div className="flex flex-wrap gap-2">
                 {communes.map((c) => (

@@ -5,16 +5,15 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, Star } from "lucide-react";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const CTA_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/115019203/aRfgCVzyCCUpEuVcLtvUmN/cta-booking-iZJWZ3tPDRyGgM5Lv8tLZ5.webp";
 
-const features = [
-  "Book online easily",
-  "Dedicated house cleaner",
-  "Easy-to-use dashboard",
-];
-
 export default function CTASection() {
+  const { t } = useLanguage();
+
+  const features = [t("cta.f1"), t("cta.f2"), t("cta.f3")];
+
   return (
     <section className="py-16 md:py-24 bg-gradient-to-br from-slate-800 via-slate-900 to-teal-900 text-white overflow-hidden">
       <div className="container">
@@ -26,17 +25,15 @@ export default function CTASection() {
             transition={{ duration: 0.5 }}
           >
             <span className="text-teal-400 text-sm font-semibold tracking-widest uppercase">
-              #TRYITNOW
+              {t("cta.tag")}
             </span>
             <h2 className="font-serif text-3xl md:text-4xl mt-3 mb-4 text-white">
-              Book your 5-star cleaning in Geneva
+              {t("cta.title")}
             </h2>
-            <p className="text-white/70 mb-6">
-              Enjoy a perfect cleaning now.
-            </p>
+            <p className="text-white/70 mb-6">{t("cta.desc")}</p>
 
             <Button asChild size="lg" className="bg-primary hover:bg-teal-600 text-white rounded-full px-8 gap-2 mb-6">
-              <a href="#booking">Book online <ArrowRight size={16} /></a>
+              <a href="#booking">{t("nav.book")} <ArrowRight size={16} /></a>
             </Button>
 
             <div className="flex flex-col gap-2">

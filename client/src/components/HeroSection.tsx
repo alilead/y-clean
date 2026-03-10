@@ -7,20 +7,17 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowRight, Star } from "lucide-react";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/115019203/aRfgCVzyCCUpEuVcLtvUmN/hero-cleaner-R43tVxs2MR5uJKsEQsYurN.webp";
 
-const trustBadges = [
-  "Book online easily",
-  "Dedicated house cleaner",
-  "0% administrative work",
-];
-
 export default function HeroSection() {
   const [postcode, setPostcode] = useState("");
+  const { t } = useLanguage();
+
+  const trustBadges = [t("hero.badge1"), t("hero.badge2"), t("hero.badge3")];
 
   const handleContinue = () => {
-    // Placeholder action
     if (postcode) {
       alert(`Booking for postcode: ${postcode}`);
     }
@@ -37,26 +34,27 @@ export default function HeroSection() {
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
             <h1 className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] leading-tight text-foreground mb-6">
-              <em>Cleaning Company in Geneva:</em>{" "}
-              <span className="text-foreground">Your cleanliness, our priority</span>
+              <em>{t("hero.title_italic")}</em>{" "}
+              <span className="text-foreground">{t("hero.title_rest")}</span>
             </h1>
 
             <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-lg">
-              Y-Clean is a cleaning company in Geneva offering its{" "}
-              <strong>services</strong> to{" "}
-              <a href="#services" className="text-primary underline underline-offset-2 hover:text-teal-700">individuals</a>{" "}
-              and{" "}
-              <a href="#commercial" className="text-primary underline underline-offset-2 hover:text-teal-700">professionals</a>{" "}
-              throughout the canton of Geneva.
+              {t("hero.desc_prefix")}{" "}
+              <strong>{t("hero.desc_services")}</strong>{" "}
+              {t("hero.desc_to")}{" "}
+              <a href="#services" className="text-primary underline underline-offset-2 hover:text-teal-700">{t("hero.desc_individuals")}</a>{" "}
+              {t("hero.desc_and")}{" "}
+              <a href="#commercial" className="text-primary underline underline-offset-2 hover:text-teal-700">{t("hero.desc_professionals")}</a>{" "}
+              {t("hero.desc_suffix")}
             </p>
 
             {/* Booking Form */}
             <div className="bg-white rounded-xl shadow-lg border border-border/60 p-5 md:p-6 max-w-md mb-6">
-              <h3 className="font-semibold text-lg mb-4">Book your cleaning</h3>
+              <h3 className="font-semibold text-lg mb-4">{t("hero.book_title")}</h3>
               <div className="flex gap-3">
                 <input
                   type="number"
-                  placeholder="Postcode"
+                  placeholder={t("hero.postcode")}
                   value={postcode}
                   onChange={(e) => setPostcode(e.target.value)}
                   className="flex-1 px-4 py-3 border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all"
@@ -65,7 +63,7 @@ export default function HeroSection() {
                   onClick={handleContinue}
                   className="bg-primary hover:bg-teal-700 text-white rounded-lg px-6 gap-2"
                 >
-                  Continue <ArrowRight size={16} />
+                  {t("hero.continue")} <ArrowRight size={16} />
                 </Button>
               </div>
               {/* Google Rating */}
@@ -101,7 +99,6 @@ export default function HeroSection() {
                 alt="Professional cleaner holding fresh towels"
                 className="w-full max-w-md lg:max-w-lg rounded-2xl object-cover"
               />
-              {/* Decorative blob */}
               <div className="absolute -z-10 -bottom-6 -right-6 w-72 h-72 bg-teal-100/60 rounded-full blur-3xl" />
             </div>
           </motion.div>

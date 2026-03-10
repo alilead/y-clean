@@ -4,31 +4,18 @@
  */
 import { CalendarCheck, FileCheck, ThumbsUp, Heart } from "lucide-react";
 import { motion } from "framer-motion";
-
-const features = [
-  {
-    icon: CalendarCheck,
-    title: "Book online easily",
-    description: "Book your service online, choose your extra services and receive instant booking confirmation.",
-  },
-  {
-    icon: FileCheck,
-    title: "0% administrative work",
-    description: "We declare all our cleaners. This way you are free of any administrative burden.",
-  },
-  {
-    icon: ThumbsUp,
-    title: "Optimal satisfaction",
-    description: "We collect feedback on our employees to ensure that they meet your highest standards.",
-  },
-  {
-    icon: Heart,
-    title: "A lasting relationship",
-    description: "Our agents and clients develop a relationship of trust and proximity, going beyond a simple working relationship.",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function WhyChooseUs() {
+  const { t } = useLanguage();
+
+  const features = [
+    { icon: CalendarCheck, title: t("why.f1_title"), description: t("why.f1_desc") },
+    { icon: FileCheck, title: t("why.f2_title"), description: t("why.f2_desc") },
+    { icon: ThumbsUp, title: t("why.f3_title"), description: t("why.f3_desc") },
+    { icon: Heart, title: t("why.f4_title"), description: t("why.f4_desc") },
+  ];
+
   return (
     <section id="why-us" className="py-16 md:py-24 bg-teal-50/50">
       <div className="container">
@@ -40,18 +27,16 @@ export default function WhyChooseUs() {
           className="text-center mb-12"
         >
           <span className="text-primary text-sm font-semibold tracking-widest uppercase">
-            #1 House Cleaning Service in Geneva
+            {t("why.subtitle")}
           </span>
-          <h2 className="font-serif text-3xl md:text-4xl mt-3 mb-4">Why choose us?</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            We combine efficiency, flexibility and discretion to offer you a reliable and local cleaning service in Geneva.
-          </p>
+          <h2 className="font-serif text-3xl md:text-4xl mt-3 mb-4">{t("why.title")}</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">{t("why.desc")}</p>
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, i) => (
             <motion.div
-              key={feature.title}
+              key={i}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
