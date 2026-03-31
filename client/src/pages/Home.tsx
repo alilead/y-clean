@@ -8,6 +8,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import PricingSection from "@/components/PricingSection";
+import ProductsSection from "@/components/ProductsSection";
 import TrustSection from "@/components/TrustSection";
 import ServicesSection from "@/components/ServicesSection";
 import CTASection from "@/components/CTASection";
@@ -25,6 +26,7 @@ export default function Home() {
         <HeroSection />
         <WhyChooseUs />
         <PricingSection />
+        <ProductsSection />
         <TrustSection />
         <ServicesSection />
         <CTASection />

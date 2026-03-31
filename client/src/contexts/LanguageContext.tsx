@@ -143,6 +143,18 @@ const translations: Record<Lang, Record<string, string>> = {
     "areas.contact": "Contact us",
     "areas.available": "Available in: Geneva and surroundings",
 
+    // Products
+    "products.title": "Our Cleaning Products & Supplies",
+    "products.desc": "Professional-grade cleaning products and equipment we use for all our services.",
+    "products.pricing_title": "Product Pricing",
+    "products.supplier": "Supplier",
+    "products.supplies_title": "Monthly Supplies by Service Type",
+    "products.service_home": "Home Cleaning",
+    "products.service_office": "Office Cleaning",
+    "products.service_restaurant": "Bar / Restaurant",
+    "products.products": "Products",
+    "products.materials": "Materials",
+
     // Footer
     "footer.contact_title": "Contact & Infos",
     "footer.payment": "American Express, MasterCard, Visa",
@@ -300,6 +312,18 @@ const translations: Record<Lang, Record<string, string>> = {
     "areas.desc": "Notre service de nettoyage à Genève dessert tout le canton, y compris les communes de Lancy, Plan-les-Ouates, Carouge, Cologny, Collonge-Bellerive, Champel, Bernex, Troinex, Vandoeuvres, etc.",
     "areas.contact": "Contactez-nous",
     "areas.available": "Disponible à : Genève et environs",
+
+    // Products
+    "products.title": "Nos produits et matériel de nettoyage",
+    "products.desc": "Produits de nettoyage et équipements professionnels que nous utilisons pour tous nos services.",
+    "products.pricing_title": "Tarifs des produits",
+    "products.supplier": "Fournisseur",
+    "products.supplies_title": "Fournitures mensuelles par type de service",
+    "products.service_home": "Nettoyage à domicile",
+    "products.service_office": "Nettoyage de bureaux",
+    "products.service_restaurant": "Bar / Restaurant",
+    "products.products": "Produits",
+    "products.materials": "Matériel",
 
     // Footer
     "footer.contact_title": "Contact & Infos",
