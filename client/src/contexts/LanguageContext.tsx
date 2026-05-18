@@ -21,7 +21,7 @@ const translations: Record<Lang, Record<string, string>> = {
     // Hero
     "hero.title_italic": "Cleaning Company in Geneva:",
     "hero.title_rest": "Your cleanliness, our priority",
-    "hero.desc_prefix": "Y-Clean is a cleaning company in Geneva offering its",
+    "hero.desc_prefix": "WhyClean is a cleaning company in Geneva offering its",
     "hero.desc_services": "services",
     "hero.desc_to": "to",
     "hero.desc_individuals": "individuals",
@@ -50,7 +50,7 @@ const translations: Record<Lang, Record<string, string>> = {
 
     // Pricing
     "pricing.title": "Our Cleaning Rates",
-    "pricing.desc": "Make your home shine with Y-Clean. Book and pay online and receive an",
+    "pricing.desc": "Make your home shine with WhyClean. Book and pay online and receive an",
     "pricing.desc_bold": "immediate confirmation",
     "pricing.how_many": "How many hours should I book?",
     "pricing.estimate": "Use the table below to estimate the duration of the household according to the surface area.",
@@ -61,7 +61,7 @@ const translations: Record<Lang, Record<string, string>> = {
 
     // Trust
     "trust.title": "Your trusted cleaning services company",
-    "trust.p1": "Our company, Y-Clean, specializes in",
+    "trust.p1": "Our company, WhyClean, specializes in",
     "trust.p1_link1": "house cleaning and maintenance",
     "trust.p1_mid": "as well as",
     "trust.p1_link2": "commercial premises cleaning",
@@ -77,7 +77,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "trust.faq2_q": "What cleaning services can I book online?",
     "trust.faq2_a": "You can book regular house cleaning, deep cleaning, end-of-tenancy cleaning, office cleaning, window cleaning, and Airbnb cleaning directly through our online platform. Simply select your service, choose your preferred date and time, and confirm your booking.",
     "trust.faq3_q": "Who employs your agents?",
-    "trust.faq3_a": "All our cleaning agents are directly employed by Y-Clean. We handle all administrative aspects including social security declarations, insurance, and payroll. This means zero administrative burden for you.",
+    "trust.faq3_a": "All our cleaning agents are directly employed by WhyClean. We handle all administrative aspects including social security declarations, insurance, and payroll. This means zero administrative burden for you.",
     "trust.faq4_q": "What are the different types of cleaning?",
     "trust.faq4_a": "We offer regular maintenance cleaning, deep cleaning for thorough sanitization, end-of-lease cleaning to meet landlord standards, office and commercial cleaning, window cleaning, and specialized Airbnb turnover cleaning.",
     "trust.faq5_q": "How much will a cleaning service in Geneva cost me?",
@@ -87,11 +87,11 @@ const translations: Record<Lang, Record<string, string>> = {
     "services.title": "Our Cleaning Services in Geneva",
     "services.desc": "From regular housekeeping to end-of-lease cleaning, discover our services tailored to all your needs in Geneva.",
     "services.s1_title": "House cleaning",
-    "services.s1_desc": "Y-Clean offers a high quality cleaning service and makes your apartment or house shine throughout the canton of Geneva.",
+    "services.s1_desc": "WhyClean offers a high quality cleaning service and makes your apartment or house shine throughout the canton of Geneva.",
     "services.s2_title": "Office cleaning",
-    "services.s2_desc": "We clean your offices and premises. For an impeccable cleanliness and a healthy work environment for your employees. 100% flexible offers.",
+    "services.s2_desc": "We clean your offices and premises for an impeccable cleanliness and a healthy work environment for your employees. 100% flexible offers.",
     "services.s3_title": "End of tenancy cleaning",
-    "services.s3_desc": "Y-Clean is the specialist in end-of-lease cleaning in Geneva. Our company also carries out the cleaning before moving in.",
+    "services.s3_desc": "WhyClean is the specialist in end-of-lease cleaning in Geneva. Our company also carries out the cleaning before moving in.",
     "services.s4_title": "Window cleaning",
     "services.s4_desc": "Our professionals in Geneva ensure the cleaning of your glass surfaces. For companies and individuals. Enjoy a perfect service.",
     "services.s5_title": "Job check",
@@ -110,7 +110,7 @@ const translations: Record<Lang, Record<string, string>> = {
 
     // Commercial
     "commercial.title": "Commercial cleaning services",
-    "commercial.p1": "Y-Clean is a cleaning company offering professional cleaning and building maintenance services throughout the canton of Geneva, Switzerland. Because our expertise goes beyond cleaning techniques, quality and satisfaction are essential to us. In this field, we provide a wide range of cleaning services from professional to professional.",
+    "commercial.p1": "WhyClean is a cleaning company offering professional cleaning and building maintenance services throughout the canton of Geneva, Switzerland. Because our expertise goes beyond cleaning techniques, quality and satisfaction are essential to us. In this field, we provide a wide range of cleaning services from professional to professional.",
     "commercial.p2": "Thus, we offer services including:",
     "commercial.s1": "Deep cleaning of houses and apartments",
     "commercial.s2": "Home cleaning and ironing",
@@ -123,9 +123,9 @@ const translations: Record<Lang, Record<string, string>> = {
     // Testimonials
     "testimonials.title": "What our customers say about us",
     "testimonials.desc": "Our clients appreciate our professionalism, responsiveness and the consistent quality of our services.",
-    "testimonials.t1": "Excellent service! The team was punctual, thorough, and very professional. My apartment has never been this clean. Highly recommend Y-Clean!",
-    "testimonials.t2": "We've been using Y-Clean for our office cleaning for 6 months now. Consistent quality, reliable team, and great communication. Very satisfied.",
-    "testimonials.t3": "The end-of-tenancy cleaning was impeccable. Got my full deposit back without any issues. Thank you Y-Clean for the outstanding work!",
+    "testimonials.t1": "Excellent service! The team was punctual, thorough, and very professional. My apartment has never been this clean. Highly recommend WhyClean!",
+    "testimonials.t2": "We've been using WhyClean for our office cleaning for 6 months now. Consistent quality, reliable team, and great communication. Very satisfied.",
+    "testimonials.t3": "The end-of-tenancy cleaning was impeccable. Got my full deposit back without any issues. Thank you WhyClean for the outstanding work!",
 
     // Blog
     "blog.title": "Discover Our Cleaning Blog",
@@ -177,7 +177,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "footer.legal_notice": "Legal notice",
     "footer.available_title": "Available in",
     "footer.available_area": "Geneva and surroundings",
-    "footer.copyright": "All rights reserved by Y-Clean",
+    "footer.copyright": "All rights reserved by WhyClean",
   },
   fr: {
     // Navbar
@@ -191,7 +191,7 @@ const translations: Record<Lang, Record<string, string>> = {
     // Hero
     "hero.title_italic": "Entreprise de nettoyage à Genève :",
     "hero.title_rest": "Votre propreté, notre priorité",
-    "hero.desc_prefix": "Y-Clean est une entreprise de nettoyage à Genève offrant ses",
+    "hero.desc_prefix": "WhyClean est une entreprise de nettoyage à Genève offrant ses",
     "hero.desc_services": "services",
     "hero.desc_to": "aux",
     "hero.desc_individuals": "particuliers",
@@ -220,7 +220,7 @@ const translations: Record<Lang, Record<string, string>> = {
 
     // Pricing
     "pricing.title": "Tarifs de notre entreprise de nettoyage",
-    "pricing.desc": "Faites briller votre maison avec Y-Clean. Réservez et payez en ligne et recevez une",
+    "pricing.desc": "Faites briller votre maison avec WhyClean. Réservez et payez en ligne et recevez une",
     "pricing.desc_bold": "confirmation immédiate",
     "pricing.how_many": "Combien d'heures dois-je réserver ?",
     "pricing.estimate": "Utilisez le tableau ci-dessous pour estimer la durée du ménage en fonction de la surface.",
@@ -231,7 +231,7 @@ const translations: Record<Lang, Record<string, string>> = {
 
     // Trust
     "trust.title": "Votre entreprise de nettoyage de confiance",
-    "trust.p1": "Notre entreprise, Y-Clean, est spécialisée dans",
+    "trust.p1": "Notre entreprise, WhyClean, est spécialisée dans",
     "trust.p1_link1": "le nettoyage et l'entretien de maisons",
     "trust.p1_mid": "ainsi que",
     "trust.p1_link2": "le nettoyage de locaux commerciaux",
@@ -247,41 +247,41 @@ const translations: Record<Lang, Record<string, string>> = {
     "trust.faq2_q": "Quels services de nettoyage puis-je réserver en ligne ?",
     "trust.faq2_a": "Vous pouvez réserver le ménage régulier, le nettoyage en profondeur, le nettoyage de fin de bail, le nettoyage de bureaux, le nettoyage de vitres et le nettoyage Airbnb directement via notre plateforme en ligne.",
     "trust.faq3_q": "Qui emploie vos agents ?",
-    "trust.faq3_a": "Tous nos agents sont directement employés par Y-Clean. Nous gérons tous les aspects administratifs, y compris les déclarations de sécurité sociale, les assurances et la paie. Cela signifie zéro charge administrative pour vous.",
+    "trust.faq3_a": "Tous nos agents sont directement employés par WhyClean. Nous gérons tous les aspects administratifs, y compris les déclarations de sécurité sociale, les assurances et la paie. Cela signifie zéro charge administrative pour vous.",
     "trust.faq4_q": "Quels sont les différents types de nettoyage ?",
     "trust.faq4_a": "Nous proposons le nettoyage d'entretien régulier, le nettoyage en profondeur, le nettoyage de fin de bail, le nettoyage de bureaux et commerces, le nettoyage de vitres et le nettoyage Airbnb spécialisé.",
     "trust.faq5_q": "Combien me coûtera un service de nettoyage à Genève ?",
-    "trust.faq5_a": "Nos tarifs commencent à CHF 138 pour une session de 3 heures. Le coût dépend de la taille de votre propriété et du type de nettoyage requis. Vous pouvez obtenir un devis instantané via notre système de réservation en ligne.",
+    "trust.faq5_a": "Nos tarifs commencent à CHF 138 pour une session de 3 heures. Le coût dépend de la taille de votre propriété et du type de nettoyage requis. Vous pouvez obtenir un devis instantané via notre système de réservation en ligne ou en nous contactant directement.",
 
     // Services
     "services.title": "Nos services de nettoyage à Genève",
     "services.desc": "Du ménage régulier au nettoyage de fin de bail, découvrez nos services adaptés à tous vos besoins à Genève.",
-    "services.s1_title": "Ménage à domicile",
-    "services.s1_desc": "Y-Clean offre un service de ménage de haute qualité et fait briller votre appartement ou maison dans tout le canton de Genève.",
+    "services.s1_title": "Nettoyage de maison",
+    "services.s1_desc": "WhyClean offre un service de nettoyage de haute qualité et fait briller votre appartement ou maison dans tout le canton de Genève.",
     "services.s2_title": "Nettoyage de bureaux",
-    "services.s2_desc": "Nous nettoyons vos bureaux et locaux. Pour une propreté impeccable et un environnement de travail sain. Offres 100% flexibles.",
+    "services.s2_desc": "Nous nettoyons vos bureaux et locaux pour une propreté impeccable et un environnement de travail sain pour vos employés. Offres 100% flexibles.",
     "services.s3_title": "Nettoyage de fin de bail",
-    "services.s3_desc": "Y-Clean est le spécialiste du nettoyage de fin de bail à Genève. Notre entreprise effectue également le nettoyage avant emménagement.",
+    "services.s3_desc": "WhyClean est le spécialiste du nettoyage de fin de bail à Genève. Notre entreprise effectue également le nettoyage avant emménagement.",
     "services.s4_title": "Nettoyage de vitres",
-    "services.s4_desc": "Nos professionnels à Genève assurent le nettoyage de vos surfaces vitrées. Pour entreprises et particuliers. Profitez d'un service parfait.",
-    "services.s5_title": "Chèque emploi",
-    "services.s5_desc": "Libérez-vous des corvées ménagères et administratives ! Nous déclarons vos employés de maison pour que vous soyez en conformité avec la loi.",
+    "services.s4_desc": "Nos professionnels à Genève assurent le nettoyage de vos surfaces vitrées. Pour les entreprises et les particuliers.",
+    "services.s5_title": "Contrôle emploi",
+    "services.s5_desc": "Libérez-vous des tâches ménagères et administratives ! Nous déclarons vos employés de maison, pour que vous soyez en conformité avec la loi.",
     "services.s6_title": "Nettoyage Airbnb",
-    "services.s6_desc": "Notre service de conciergerie Airbnb assure le nettoyage et la gestion de vos appartements de location. Pour la plus grande satisfaction de vos hôtes.",
+    "services.s6_desc": "Notre service de conciergerie Airbnb assure le nettoyage et les services de conciergerie pour vos appartements en location.",
     "services.learn_more": "En savoir plus",
 
     // CTA
     "cta.tag": "#ESSAYEZMAINTENANT",
     "cta.title": "Réservez votre nettoyage 5 étoiles à Genève",
-    "cta.desc": "Profitez d'un nettoyage parfait maintenant.",
+    "cta.desc": "Profitez d'un nettoyage parfait dès maintenant.",
     "cta.f1": "Réservation en ligne facile",
     "cta.f2": "Agent de ménage dédié",
     "cta.f3": "Tableau de bord facile à utiliser",
 
     // Commercial
     "commercial.title": "Services de nettoyage commercial",
-    "commercial.p1": "Y-Clean est une entreprise de nettoyage offrant des services professionnels de nettoyage et d'entretien de bâtiments dans tout le canton de Genève, en Suisse. Parce que notre expertise va au-delà des techniques de nettoyage, la qualité et la satisfaction sont essentielles pour nous.",
-    "commercial.p2": "Ainsi, nous offrons des services incluant :",
+    "commercial.p1": "WhyClean est une entreprise de nettoyage proposant des services professionnels de nettoyage et d'entretien de bâtiments dans tout le canton de Genève, en Suisse. Parce que notre expertise va au-delà des techniques de nettoyage, la qualité et la satisfaction nous sont essentielles.",
+    "commercial.p2": "Ainsi, nous proposons des services comprenant :",
     "commercial.s1": "Nettoyage en profondeur de maisons et appartements",
     "commercial.s2": "Ménage et repassage à domicile",
     "commercial.s3": "Nettoyage et débarras de bureaux",
@@ -292,14 +292,14 @@ const translations: Record<Lang, Record<string, string>> = {
 
     // Testimonials
     "testimonials.title": "Ce que disent nos clients",
-    "testimonials.desc": "Nos clients apprécient notre professionnalisme, notre réactivité et la qualité constante de nos prestations.",
-    "testimonials.t1": "Excellent service ! L'équipe était ponctuelle, minutieuse et très professionnelle. Mon appartement n'a jamais été aussi propre. Je recommande vivement Y-Clean !",
-    "testimonials.t2": "Nous utilisons Y-Clean pour le nettoyage de nos bureaux depuis 6 mois. Qualité constante, équipe fiable et excellente communication. Très satisfait.",
-    "testimonials.t3": "Le nettoyage de fin de bail était impeccable. J'ai récupéré l'intégralité de ma caution sans aucun problème. Merci Y-Clean pour ce travail remarquable !",
+    "testimonials.desc": "Nos clients apprécient notre professionnalisme, notre réactivité et la qualité constante de nos services.",
+    "testimonials.t1": "Service excellent ! L'équipe était ponctuelle, minutieuse et très professionnelle. Mon appartement n'a jamais été aussi propre. Je recommande vivement WhyClean !",
+    "testimonials.t2": "Nous utilisons WhyClean pour le nettoyage de nos bureaux depuis 6 mois. Qualité constante, équipe fiable et excellente communication. Très satisfait.",
+    "testimonials.t3": "Le nettoyage de fin de bail était impeccable. J'ai récupéré l'intégralité de ma caution sans aucun problème. Merci WhyClean pour ce travail remarquable !",
 
     // Blog
-    "blog.title": "Découvrez notre blog du nettoyage",
-    "blog.desc": "Astuces, conseils et bonnes pratiques : explorez notre blog pour mieux entretenir vos espaces au quotidien.",
+    "blog.title": "Découvrez notre blog nettoyage",
+    "blog.desc": "Conseils, astuces et bonnes pratiques : explorez notre blog pour mieux entretenir vos espaces au quotidien.",
     "blog.p1": "Services de nettoyage à Genève : comment faire le bon choix ?",
     "blog.p2": "Comment choisir la bonne entreprise de nettoyage B2B à Genève ?",
     "blog.p3": "Pourquoi faire appel à une entreprise de nettoyage ?",
@@ -309,7 +309,7 @@ const translations: Record<Lang, Record<string, string>> = {
     // Areas
     "areas.title": "Zones desservies",
     "areas.canton": "Canton de Genève",
-    "areas.desc": "Notre service de nettoyage à Genève dessert tout le canton, y compris les communes de Lancy, Plan-les-Ouates, Carouge, Cologny, Collonge-Bellerive, Champel, Bernex, Troinex, Vandoeuvres, etc.",
+    "areas.desc": "Notre service de nettoyage à Genève couvre tout le canton, y compris les communes de Lancy, Plan-les-Ouates, Carouge, Cologny, Collonge-Bellerive, Champel, Bernex, Troinex, Vandoeuvres, etc.",
     "areas.contact": "Contactez-nous",
     "areas.available": "Disponible à : Genève et environs",
 
@@ -331,7 +331,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "footer.social_title": "Suivez-nous sur les réseaux sociaux",
     "footer.hours_title": "Heures d'ouverture",
     "footer.hours": "Lundi – Vendredi :",
-    "footer.hours_time": "9:00 – 16:00",
+    "footer.hours_time": "9h00 – 16h00",
     "footer.resources": "Ressources",
     "footer.checklists": "Checklists",
     "footer.terms": "Conditions générales",
@@ -343,11 +343,11 @@ const translations: Record<Lang, Record<string, string>> = {
     "footer.jobs": "Emplois",
     "footer.contact_us": "Contactez-nous",
     "footer.blog": "Blog",
-    "footer.legal_title": "Légal",
+    "footer.legal_title": "Mentions légales",
     "footer.legal_notice": "Mentions légales",
     "footer.available_title": "Disponible à",
     "footer.available_area": "Genève et environs",
-    "footer.copyright": "Tous droits réservés par Y-Clean",
+    "footer.copyright": "Tous droits réservés par WhyClean",
   },
 };
 
@@ -367,8 +367,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   );
 }
 
-export function useLanguage() {
-  const context = useContext(LanguageContext);
-  if (!context) throw new Error("useLanguage must be used within LanguageProvider");
-  return context;
+export function useLanguage(): LanguageContextType {
+  const ctx = useContext(LanguageContext);
+  if (!ctx) throw new Error("useLanguage must be used within a LanguageProvider");
+  return ctx;
 }

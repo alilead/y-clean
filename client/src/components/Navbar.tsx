@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import type { Lang } from "@/contexts/LanguageContext";
 
-const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/115019203/aRfgCVzyCCUpEuVcLtvUmN/Clipboard_0_BFB96CCE_c3f5de0f.png";
+const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/115019203/aRfgCVzyCCUpEuVcLtvUmN/whyclean-logo-CboALjssFu5pEZbbVpxan5.webp";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -33,7 +33,7 @@ export default function Navbar() {
         <a href="#" className="flex items-center gap-2 shrink-0">
           <img
             src={LOGO_URL}
-            alt="Y-Clean Logo"
+            alt="WhyClean Logo"
             className="h-12 md:h-14 w-auto"
           />
         </a>
